@@ -1,10 +1,14 @@
 import os
 import pygame
-import win32gui
 import pyautogui
 import pyperclip
 import pytesseract
 from PIL import Image
+import win32gui, win32con
+
+#hiding console after opening the program
+hide = win32gui.GetForegroundWindow()
+win32gui.ShowWindow(hide, win32con.SW_HIDE)
 
 pygame.init()
 
