@@ -8,8 +8,8 @@ import win32gui, win32con
 
 #hiding console after opening the program
 hide = win32gui.GetForegroundWindow()
-#comment this out if you run in IDE
-win32gui.ShowWindow(hide, win32con.SW_HIDE)
+#you should only uncomment this when you are running the script from file, not inside editor/ide
+#win32gui.ShowWindow(hide, win32con.SW_HIDE)
 
 pygame.init()
 
